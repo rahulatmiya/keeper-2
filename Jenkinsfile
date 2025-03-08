@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/your-repo/static-website.git'
+                 'echo https://github.com/your-repo/static-website.git'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'echo "No build step needed for static site"'
+                 'echo "No build step needed for static site"'
             }
         }
 
@@ -22,8 +22,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sshagent(['your-ssh-credential-id']) {
-                    sh 'scp -r * user@your-server:/var/www/html/'
+                'echo "Deploying basic tests (e.g., HTML validation)"'
                 }
             }
         }
