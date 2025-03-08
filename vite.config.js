@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true, // The host to connect to for HMR
-    port: 5174, 
+    port: 8090, 
   },
 })

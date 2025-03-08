@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 # Expose port 80 so the container can be accessed from outside
-EXPOSE 5174
+EXPOSE 8090
 
 # Command to run the Nginx server
 CMD ["npm", "run", "dev"]
