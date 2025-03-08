@@ -4,25 +4,25 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                 'echo https://github.com/your-repo/static-website.git'
+                 echo "https://github.com/your-repo/static-website.git"
             }
         }
 
         stage('Build') {
             steps {
-                 'echo "No build step needed for static site"'
+                 echo "No build step needed for static site"
             }
         }
 
         stage('Test') {
             steps {
-                sh 'echo "Running basic tests (e.g., HTML validation)"'
+                 echo "Running basic tests (e.g., HTML validation)"
             }
         }
 
         stage('Deploy') {
             steps {
-                'echo "Deploying basic tests (e.g., HTML validation)"'
+                echo "Deploying basic tests (e.g., HTML validation)"
                 }
             }
         }
